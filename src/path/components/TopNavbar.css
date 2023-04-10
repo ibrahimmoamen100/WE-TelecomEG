@@ -1,0 +1,148 @@
+nav {
+  width: 100%;
+  height: auto;
+  background: var(--primaryColor);
+}
+@media all and (max-width: 992px) {
+  nav {
+    display: none;
+  }
+}
+
+.container_navbar {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+}
+@media (max-width: 992px) {
+  .container_navbar {
+    max-width: auto;
+    padding: 0 5em;
+  }
+}
+
+.container_navbar > div {
+  padding: 0.3rem;
+}
+.user_search {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  /* background-color: red; */
+}
+.link_home-titlebar {
+  /* background-color: white; */
+  /* justify-self: end; */
+}
+
+.user_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  position: relative;
+}
+.user_section:after {
+  content: " ";
+  width: 10px;
+  height: 4px;
+  background-color: transparent;
+  left: -1.2em;
+  top: 0.9em;
+  display: block;
+  position: absolute;
+  border-style: solid;
+  border-width: 0.4rem;
+  border-color: #fff transparent transparent;
+}
+.user_section > svg {
+  font-size: 1.3em;
+  color: white;
+  padding: 0;
+}
+.search_container_border {
+  /* border: 1px solid rgb(248, 248, 248); */
+  width: 5em;
+  border-radius: 0.3rem;
+  border: 1px solid transparent;
+
+  position: relative;
+  cursor: pointer;
+  transition: width 0.35s ease-out;
+}
+.toggle_search {
+  width: 10em;
+  border: 1px solid #ccc;
+}
+
+.search_container_border:after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  background: rgba(255, 255, 255, 0.424);
+  left: -1.2rem;
+  top: 0;
+  height: 2rem;
+}
+
+.search_section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 86%;
+  position: relative;
+  transition: 0.3s ease-in-out;
+}
+
+.search_container_border > .search_section > input {
+  background-color: transparent;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  height: inherit;
+  max-width: 100%;
+  color: #fff;
+  direction: rtl;
+  cursor: pointer;
+  pointer-events: none;
+}
+.toggle_search > .search_section > input {
+  cursor: auto;
+  pointer-events: auto;
+}
+.search_section > input:focus {
+  cursor: auto;
+}
+.search_section > input::placeholder {
+  color: #ccc;
+  font-size: 0.9em;
+}
+.search_section > svg {
+  color: #fff;
+  font-size: 1.1em;
+  z-index: 5;
+  position: absolute;
+  right: -0.8em;
+}
+
+/* Home Link */
+
+.home_link {
+  color: white;
+  text-decoration: none;
+}
+.home_link:hover > span,
+.home_link:hover > svg {
+  color: #eee;
+}
+.home_link > span {
+  color: white;
+  font-size: 1em;
+}
+.home_link > svg {
+  font-size: 1.5em;
+  color: white;
+}

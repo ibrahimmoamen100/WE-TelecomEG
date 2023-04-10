@@ -1,0 +1,81 @@
+.current_plan_container {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 8%);
+  padding: 2em 1.5em;
+  border-radius: 0.5em;
+  align-items: flex-end;
+  gap: 0.2em;
+  flex: 1.4;
+}
+
+@media (max-width: 767px) {
+  .current_plan_container {
+    flex: 1;
+  }
+}
+
+.current_plan_cost_content {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 0.2em;
+}
+.current_plan_speed {
+  font-size: 1.4em;
+  color: var(--primaryColor);
+}
+.current_plan_cost_num {
+  display: flex;
+  flex-direction: row;
+}
+.current_plan_cost_num > span {
+  font-size: 0.7em;
+}
+
+.current_plan_btns_deta {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.5em;
+  width: 100%;
+}
+@media (max-width: 1200px) {
+  .current_plan_btns_deta {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+
+.current_deta {
+  font-size: 0.8em;
+}
+.btns_current_plan {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  flex: 1;
+  gap: 1em;
+}
+@media (max-width: 767px) {
+  .btns_current_plan {
+    flex-direction: column;
+  }
+}
+
+.subscription_renewal_btn,
+.subscription_renewal_btn:hover {
+  background-color: var(--primaryColor);
+  color: #fff;
+  padding: 0.4em 1.6em !important;
+}
+.change_plan_btn,
+.change_plan_btn:hover {
+  background-color: var(--secondaryColor);
+  color: #fff;
+  padding: 0.4em 1.6em !important;
+}

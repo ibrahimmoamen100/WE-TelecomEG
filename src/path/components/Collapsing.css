@@ -1,0 +1,53 @@
+.subscribe {
+  padding: 0.8em;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.239);
+}
+.subscribe > h6 {
+  position: relative;
+  margin-right: 2em;
+  cursor: pointer;
+  padding: 0.4em;
+  color: var(--primaryColor);
+}
+.subscribe > h6::before {
+  content: "";
+  position: absolute;
+  width: 0.4em;
+  height: 0.05em;
+  background-color: #333;
+  right: -0.6em;
+  top: 0.6em;
+  font-size: 2em;
+}
+
+.subscribe > ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 1em 1.2em;
+  height: 0;
+  display: none;
+  /* transition: height 0.3s ease-in-out; */
+}
+.subscribe > ul > li {
+  text-align: right;
+  position: relative;
+  padding: 0.5em 1em;
+  line-height: 2em;
+}
+.subscribe > ul > li::after {
+  content: "  ";
+  position: absolute;
+  right: -5px;
+  top: 50%;
+  width: 5px;
+  height: 5px;
+  background-color: #000;
+  border-radius: 50%;
+  margin-left: 50px;
+}
+@media (max-width: 768px) {
+  .subscribe > ul > li::after {
+    top: 1.5em;
+  }
+}

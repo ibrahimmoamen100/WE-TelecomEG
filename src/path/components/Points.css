@@ -1,0 +1,149 @@
+.points_container {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 0.5em;
+  padding: 2em;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 8%);
+}
+
+.points_title_btn {
+  display: flex;
+  justify-content: space-between;
+}
+.points_title {
+}
+.btn_points,
+.btn_points:hover,
+.btn_points:focus {
+  background-color: var(--primaryColor);
+  color: #fff;
+  /* padding: 0 1em !important; */
+  outline: none !important;
+}
+
+.points_details_container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 3em;
+}
+
+.circle_points {
+  width: 13em;
+  height: 13em;
+  background-image: linear-gradient(
+    to right bottom,
+    var(--primaryColor) 20%,
+    var(--secondaryColor) 90%
+  );
+  background-image: radial-gradient(
+    circle at left,
+    var(--primaryColor) 40%,
+    var(--nextColor) 100%
+  );
+  position: relative;
+  border: 1px dotted var(--primaryColor);
+
+  border-radius: 50%;
+  padding: 5em;
+}
+
+.circle_inner {
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 1px dotted var(--primaryColor);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  z-index: 1;
+}
+
+.circle_content {
+  z-index: 2;
+  position: absolute;
+  bottom: -0.7em;
+  /* width: 5em; */
+  padding: 0 1em;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  border-radius: 0%;
+}
+
+.circle_points > img {
+  width: 50px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+  z-index: 10;
+}
+.circle_points > span {
+  width: 50px;
+  position: absolute;
+  top: 65%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+  z-index: 10;
+  font-size: 1.28em;
+  font-weight: bold;
+}
+
+.svg_circle {
+  /* height: 100%;
+  width: 100%; */
+  display: flex;
+  background-image: linear(
+    to right,
+    var(--primaryColor),
+    var(--secondaryColor)
+  );
+  /* background-color: red; */
+}
+.svg_circle > svg {
+  height: 300px;
+  width: 100%;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+#rect1 {
+  fill: url(#Gradient1);
+}
+.stop1 {
+  stop-color: red;
+}
+.stop2 {
+  stop-color: black;
+  stop-opacity: 0;
+}
+.stop3 {
+  stop-color: blue;
+}
+.points_left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+  color: var(--primaryColor);
+  font-size: 1.2em;
+  background-color: #fff;
+  padding: 0.5em;
+  word-break: keep-all;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.points_left:after {
+  content: "";
+  width: 100%;
+  background-color: blue;
+  position: absolute;
+}

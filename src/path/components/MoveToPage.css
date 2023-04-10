@@ -1,0 +1,23 @@
+.MBP_container {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 1.2em 1em;
+  /* background-color: red; */
+  max-width: 1200px;
+}
+
+@media (max-width: 992px) {
+  .MBP_container {
+    margin-top: 5em;
+  }
+}
+
+.MBP_container > a,
+.MBP_container > label {
+  text-decoration: none;
+  color: var(--primaryColor);
+}
+.MBP_container > span {
+  padding: 0px 0.5em;
+  color: var(--primaryColor);
+}

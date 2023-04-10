@@ -1,0 +1,38 @@
+.pay_container {
+  background-color: #fff;
+  display: flex;
+  border-radius: 0.5em;
+  overflow: hidden;
+  flex: 1.2;
+  height: auto;
+  /* min-height: 260px; */
+  justify-content: flex-start;
+  align-items: flex-start;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 8%);
+}
+.pay_content {
+  padding: 1em;
+}
+.wepay_img {
+  height: 265px;
+  object-fit: contain;
+}
+
+.wepay_title {
+  color: var(--primaryColor);
+}
+
+@media (max-width: 768px) {
+  .pay_container {
+    flex-direction: column-reverse;
+    /* width: 100%; */
+  }
+  .wepay_img {
+    height: auto;
+    width: 100%;
+  }
+}
+.wepay_read_more,
+.wepay_read_more:hover {
+  color: var(--primaryColor);
+}

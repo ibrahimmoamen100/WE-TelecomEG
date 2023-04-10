@@ -1,0 +1,34 @@
+.overview_details_container {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 8%);
+  padding: 2em 1.5em;
+  border-radius: 0.5em;
+  align-items: flex-end;
+  gap: 1.5em;
+  flex: 1;
+}
+
+.overview_details_phoneN {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 0em 0.5em;
+}
+.overview_num_label {
+  font-size: 1.1em;
+}
+
+.overview_number {
+  font-size: 1.4em;
+}
+
+.change_number {
+  background-color: var(--primaryColor);
+  color: #fff;
+  padding: 0.3em 1.5em !important;
+}
+.change_number:hover {
+  color: #fff;
+}
